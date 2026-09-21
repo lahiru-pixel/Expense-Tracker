@@ -3,6 +3,8 @@ const cors = require('cors');
 const morgan = require('morgan');
 const healthRoutes = require('./routes/healthRoutes');
 const authRoutes = require('./routes/authRoutes');
+const expenseRoutes = require('./routes/expenseRoutes');
+const budgetRoutes = require('./routes/budgetRoutes');
 const errorHandler = require('./middleware/errorHandler');
 
 const app = express();
@@ -18,6 +20,8 @@ if (process.env.NODE_ENV !== 'test') {
 // Routes
 app.use('/api/health', healthRoutes);
 app.use('/api/auth', authRoutes);
+app.use('/api/expenses', expenseRoutes);
+app.use('/api/budget', budgetRoutes);
 
 // Central error handler
 app.use(errorHandler);
