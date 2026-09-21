@@ -4,10 +4,9 @@ import ProtectedRoute from './components/ProtectedRoute';
 import Login from './pages/Login';
 import Register from './pages/Register';
 
-// Placeholders for Phase 6 pages
-const Dashboard = () => <div>Dashboard placeholder</div>;
-const Expenses = () => <div>Expenses placeholder</div>;
-const Budget = () => <div>Budget placeholder</div>;
+import Dashboard from './pages/Dashboard';
+import Expenses from './pages/Expenses';
+import Budget from './pages/Budget';
 
 function App() {
   return (
